@@ -4,9 +4,9 @@ const Shapes = () => {
   return (
     <div>
       <svg
-        width="{10}"
-        height="{10}"
-        viewBox="0 0 300 30 "
+        width={16}
+        height={16}
+        viewBox="0 0 28 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

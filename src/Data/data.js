@@ -7,28 +7,17 @@ import img5 from "../assets/image/Image-5.png"
 import user from "../assets/image/user.png"
 import user1 from "../assets/image/user-1.png"
 import user2 from "../assets/image/user-2.png"
-import Delivery from "../assets/delivery.jsx"
-import Settings from "../assets/settings.jsx"
-import GroupSupport from "../assets/Group-support.jsx"
-import TechnicalSupport from "../assets/technical-support.jsx"
-import Quote from "../assets/Quote.jsx"
-import Development from "../assets/Development.jsx"
-import IconOne from "../assets/icon.jsx"
-import IconTwo from "../assets/icon-2.jsx"
-import IconThree from "../assets/icon-3.jsx"
-import IconFour from "../assets/icon-4.jsx"
-import IconFive from "../assets/icon-5.jsx"
-import IconSix from "../assets/icon-6.jsx"
-import Icon1 from "../assets/icon1.jsx"
-import Icon2 from "../assets/icon2.jsx"
-import Icon3 from "../assets/icon3.jsx"
-import Icon4 from "../assets/icon4.jsx"
-import Icon5 from "../assets/icon5.jsx"
-import Icon6 from "../assets/icon6.jsx"
-import LetsTalk from "../assets/Lets-talk.jsx"
-import ShapesBig from "../assets/Shapes-big.jsx"
-import Shapes from "../assets/Shapes.jsx"
-import ShaperTwo from "../assets/Shapes-two.jsx"
+import OntimeDelivery from "../assets/OntimeDelivery.svg"
+import BestQualitySetting from "../assets/BestQualitySetting.svg"
+import SupportAssist from "../assets/SupportAssist.svg"
+import TechnicalSupport from "../assets/TechnicalSupport.svg"
+import Development from "../assets/Development.svg"
+import Discover from "../assets/Discover.svg"
+import Designing from "../assets/Designing.svg"
+import Development2 from "../assets/Development2.svg"
+import Testing from "../assets/Testing.svg"
+import Deployment from "../assets/Deployment.svg"
+import Maintenance from "../assets/Maintenance.svg"
 
 export const data = {
     navigation: [
@@ -86,19 +75,19 @@ export const data = {
     ourExpertise: [
         {
             id: 1,
-            img: Delivery,
+            img: OntimeDelivery,
             title: "On Time Delivery",
             description: "Through True Rich Attended does no end it his mother since real had half every him."
         },
         {
             id: 2,
-            img: Settings,
+            img: BestQualitySetting,
             title: "Best Quality",
             description: "Through True Rich Attended does no end it his mother since real had half every him."
         },
         {
             id: 3,
-            img: GroupSupport,
+            img: SupportAssist,
             title: "Support Assist",
             description: "Through True Rich Attended does no end it his mother since real had half every him."
         }
@@ -113,7 +102,7 @@ export const data = {
         },
         {
             id: 2,
-            img: Settings,
+            img: BestQualitySetting,
             title: "Testing Management",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service"
 
@@ -129,42 +118,42 @@ export const data = {
     ourProcess: [
         {
             id: 1,
-            img: Icon1,
+            img: Discover,
             num: "01",
             title: "Discover",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."
         },
         {
             id: 2,
-            img: Icon2,
+            img: Designing ,
             num: "02",
             title: "Designing",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."
         },
         {
             id: 3,
-            img: Icon3,
+            img: Development2 ,
             num: "03",
             title: "Development",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."
         },
         {
             id: 4,
-            img: Icon4,
+            img: Testing,
             num: "04",
             title: "Testing",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."
         },
         {
             id: 5,
-            img: Icon5,
+            img: Deployment,
             num: "05",
             title: "Deployment",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."
         },
         {
             id: 6,
-            img: Icon6,
+            img: Maintenance,
             num: "06",
             title: "Maintenance",
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."

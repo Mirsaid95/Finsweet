@@ -10,8 +10,8 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#232536] relative">
-      <div className="max-w-[1240px] mx-auto h-[80px] flex items-center p-2 justify-between shadow-[3px_18px_15px_-25px_rgba(250,250,250,250)] z-100">
+    <nav className="bg-[#232536] sticky top-0 z-10">
+      <div className="max-w-[1240px] mx-auto h-[80px] flex items-center p-2 justify-between shadow-[3px_18px_15px_-25px_rgba(250,250,250,250)]">
         <div className="flex items-center w-full justify-between">
           <Link to={data.navigation[0].link}>
             <img

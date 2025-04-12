@@ -1,5 +1,7 @@
 import React from "react";
 import Shapes from "../../assets/Shapes";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+
 
 
 export const Button = ({ text, imageUrl, onClick, className }) => {
@@ -8,6 +10,7 @@ export const Button = ({ text, imageUrl, onClick, className }) => {
       {imageUrl && <img src={imageUrl} alt="button-image" />}
       {text}
         <span className="absolute left-0 top-0"><Shapes/></span>
+        <MdOutlineArrowRightAlt/>
     </button>
   );
 };
