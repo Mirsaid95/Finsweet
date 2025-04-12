@@ -6,7 +6,6 @@ import { data } from "../Data/data";
 export const Home = () => {
   console.log(data);
   return (
-
     <div>
       <header className="bg-[#232536] pt-4">
         <div className="max-w-[1240px] mx-auto p-2 flex flex-col-reverse  md:flex-row items-center md:gap-10">
@@ -35,16 +34,20 @@ export const Home = () => {
         </div>
       </header>
       <section className="container mx-auto">
-        <div>
+        <div className="max-w-[1024px] mx-auto pt-6 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <h6 className="font-medium text-sm uppercase text-[#000] tracking-wide">ABOUT US</h6>
+            <h6 className="font-medium text-sm uppercase text-[#000] tracking-wide">
+              ABOUT US
+            </h6>
             <div className="flex flex-col gap-2">
               <h1 className="font-semibold text-[20px] leading-6 text-[#232536] tracking-wide">
                 The company leads entire webdesign process from concept to
                 delivery.
               </h1>
               <div className="flex flex-col gap-2">
-                <h4 className="text-[20px] leading-6 text-[#232536] font-semibold">The Era Of Technology.</h4>
+                <h4 className="text-[20px] leading-6 text-[#232536] font-semibold">
+                  The Era Of Technology.
+                </h4>
                 <p className="font-normal text-[12px] tracking-wide text-[#5d5f6d]">
                   Through True Rich Attended does no end it his mother since
                   real had half every him case in packages enquire we up
@@ -54,16 +57,26 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-2">
-            {
-              data.aboutUs.map((item) => (
-                <div key={item.id}>
-                  <img src={item.img} alt="image"/>
-                </div>
-              ))
-            }
-            
+          <div className="flex flex-grow gap-2 items-center">
+            {data.aboutUs.map((item) => (
+              <div key={item.id} className="">
+                <img src={item.img} alt="image" className="object-cover object-center"/>
+              </div>
+            ))}
           </div>
+          {/* <div>
+              <div>
+                <div className="w-[105px] flex flex-col gap-2 bg-red-500">
+                  <h1 className="">1560+</h1>
+                  <div className="flex items-center w-full">
+                    <div className="bg-blue-600 w-1/6 h-2">&nbsp;</div>
+                    <div className="bg-orange-200 w-3/6 h-2">&nbsp;</div>
+                    <div className="bg-orange-400 w-2/6 h-2">&nbsp;</div>
+                  </div>
+                  <p className="text-[12px]">Project Delivered</p>
+                </div>
+              </div>
+            </div> */}
         </div>
       </section>
     </div>
