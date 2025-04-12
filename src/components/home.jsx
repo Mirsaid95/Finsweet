@@ -2,7 +2,7 @@ import React from "react";
 import { data } from "../Data/data";
 import headerImg from "../assets/image/Image.png";
 import ShapesRight from "../assets/ShapesRight.svg";
-import ourQuote from "../assets/ourQuote.svg"
+import ourQuote from "../assets/ourQuote.svg";
 import { Button } from "./Button/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
@@ -309,10 +309,16 @@ export const Home = () => {
             <div className="absolute -top-4 right-10">
               <img src={ourQuote} alt="" />
             </div>
-            <div className="flex gap-4 absolute bottom-2 left-[35%] translate-x-[50%] translate-y-[50%]">
-              <div className="bg-slate-400 w-[10px] h-[10px] rounded-full hover:bg-slate-900 cursor-pointer">&nbsp;</div>
-              <div className="bg-slate-400 w-[10px] h-[10px] rounded-full hover:bg-slate-900 cursor-pointer">&nbsp;</div>
-              <div className="bg-slate-400 w-[10px] h-[10px] rounded-full hover:bg-slate-900 cursor-pointer">&nbsp;</div>
+            <div className="flex gap-4 absolute -bottom-4 left-[35%] translate-x-[50%] translate-y-[50%]">
+              <div className="bg-slate-400 w-[10px] h-[10px] rounded-full hover:bg-slate-900 cursor-pointer">
+                &nbsp;
+              </div>
+              <div className="bg-slate-400 w-[10px] h-[10px] rounded-full hover:bg-slate-900 cursor-pointer">
+                &nbsp;
+              </div>
+              <div className="bg-slate-400 w-[10px] h-[10px] rounded-full hover:bg-slate-900 cursor-pointer">
+                &nbsp;
+              </div>
             </div>
             <div class="absolute top-0 left-0">
               <div class="bg-blue-600 w-4 h-[80px]">&nbsp;</div>
@@ -340,6 +346,44 @@ export const Home = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#ECF8F9] pt-10 pb-10">
+        <div className="relative max-w-[1024px] md:h-[50vh] mx-auto p-2 flex flex-col gap-4 justify-center">
+          <div className="absolute -top-2 left-2 w-[15px] h-[15px] bg-[#666DFF]">
+            &nbsp;
+          </div>
+          <h1 className="text-[#232536] font-semibold text-[22px] md:text-[34px] lg:text-[48px]">
+            Read our latest blogs & news
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+            {data.blogNews.map((item) => (
+              <div key={item.id} className="bg-white flex flex-col gap-2 md:flex-row">
+                <div className="w-full md:w-[60%] md:h-full">
+                  <img
+                    src={item.img}
+                    alt=""
+                    className="w-full object-cover md:h-full"
+                  />
+                </div>
+                <div className="flex flex-col gap-2 p-2 md:justify-center">
+                  <p className="text-[14px] text-[#23253683] font-medium">
+                    {item.calendarData.toLocaleDateString("en-Us", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </p>
+                  <h1 className="text-[18px] text-[#232536] font-semibold">{item.title}</h1>
+                  <ul>
+                    <li className="text-blue-500">
+                      <a href="#" className="text-[14px] flex items-center gap-2">Read More <MdOutlineArrowRightAlt/></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

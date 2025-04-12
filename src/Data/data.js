@@ -178,13 +178,13 @@ export const data = {
             id: 1,
             img: img4,
             title: "Today’s best design trends for digital products",
-            calendar: new Date("Jan 19, 2021")
+            calendarData: new Date("Jan 19, 2021")
         },
         {
             id: 2,
             img: img5,
             title: "A practical guide to building a brand strategy",
-            calendar: new Date("Jan 19, 2021")
+            calendarData: new Date("Jan 19, 2021")
         }
     ]
 }
