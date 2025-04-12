@@ -4,9 +4,9 @@ import img2 from "../assets/image/Image-2.png"
 import img3 from "../assets/image/Image-3.png"
 import img4 from "../assets/image/Image-4.png"
 import img5 from "../assets/image/Image-5.png"
-import user from "../assets/image/user.png"
-import user1 from "../assets/image/user-1.png"
-import user2 from "../assets/image/user-2.png"
+import photo1 from "../assets/image/user.png"
+import photo2 from "../assets/image/user-1.png"
+import photo3 from "../assets/image/user-2.png"
 import OntimeDelivery from "../assets/OntimeDelivery.svg"
 import BestQualitySetting from "../assets/BestQualitySetting.svg"
 import SupportAssist from "../assets/SupportAssist.svg"
@@ -159,18 +159,18 @@ export const data = {
             description: "We aim to attain the greatest satisfaction for our clients and be one of the prominent."
         },
     ],
-    users: [
+    usersPhoto: [
         {
             id: 1,
-            img: user,
+            img: photo1, 
         },
         {
             id: 2,
-            img: user1,
+            img: photo2,
         },
         {
             id: 3,
-            img: user2
+            img: photo3
         }
     ],
     blogNews: [
