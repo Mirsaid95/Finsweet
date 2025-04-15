@@ -188,7 +188,7 @@ export const Home = () => {
           </div>
           <div className="flex flex-wrap gap-4 md:flex-nowrap">
             {data.ourService.map((item) => (
-              <div className="bg-white flex flex-col gap-4 p-4 shadow-2xl">
+              <div key={item.id} className="bg-white flex flex-col gap-4 p-4 shadow-2xl">
                 <div className="bg-[#FFE6D2] w-[50px] h-[50px] rounded-full flex items-center justify-center">
                   <img src={item.img} alt="Icon-icon" />
                 </div>
@@ -237,7 +237,7 @@ export const Home = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {data.ourProcess.map((item, index) => (
-                <div key={index.id} className="relative border p-4">
+                <div key={item.id} className="relative border p-4">
                   {index === 0 && (
                     <div className="absolute top-0 left-0 w-full flex">
                       <div className="bg-orange-500 h-2 w-full">&nbsp;</div>
@@ -253,7 +253,7 @@ export const Home = () => {
                     </div>
                   )}
                   <div className="flex flex-col gap-4">
-                    <div className="w-[50px] h-[50px] bg-orange-200 rounded-full flex items-center justify-center">
+                    <div  className="w-[50px] h-[50px] bg-orange-200 rounded-full flex items-center justify-center">
                       <img src={item.img} alt={item.title} />
                     </div>
                     <div>
@@ -320,10 +320,10 @@ export const Home = () => {
                 &nbsp;
               </div>
             </div>
-            <div class="absolute top-0 left-0">
-              <div class="bg-blue-600 w-4 h-[80px]">&nbsp;</div>
-              <div class="bg-orange-200 w-4 h-[150px]">&nbsp;</div>
-              <div class="bg-orange-400 w-4 h-[120px]">&nbsp;</div>
+            <div className="absolute top-0 left-0">
+              <div className="bg-blue-600 w-4 h-[80px]">&nbsp;</div>
+              <div className="bg-orange-200 w-4 h-[150px]">&nbsp;</div>
+              <div className="bg-orange-400 w-4 h-[120px]">&nbsp;</div>
             </div>
             <h1 className="text-[18px] md:text-[24px] font-semibold text-[#232536]">
               Finsweet has been a wonderful partner to work with. I have been a
@@ -334,7 +334,7 @@ export const Home = () => {
               {data.usersPhoto.map(
                 (item) =>
                   item.id === 1 && (
-                    <div>
+                    <div key={item.id}>
                       <img src={item.img} alt="image" />
                     </div>
                   )
