@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../../data/data"
 import { LuAlignJustify } from "react-icons/lu";
 import { useState } from "react";
+import { data } from "../../data/data"
 
 
 

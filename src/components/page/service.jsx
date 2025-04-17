@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../Button/Button";
 import ShapesRight from "../../assets/ShapesRight.svg";
-import  data  from "../data/data"
+import { data } from "../../data/data"
 import Feature from "../../assets/image/Feature.png";
 import Feature1 from "../../assets/image/Feature-1.png";
 import Feature2 from "../../assets/image/Feature-2.png";

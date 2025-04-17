@@ -19,7 +19,7 @@ import Testing from "../assets/Testing.svg"
 import Deployment from "../assets/Deployment.svg"
 import Maintenance from "../assets/Maintenance.svg"
 
-const data = {
+export const data = {
     navigation: [
         {
             id: 1,
@@ -188,5 +188,3 @@ const data = {
         }
     ]
 }
-
-export default data

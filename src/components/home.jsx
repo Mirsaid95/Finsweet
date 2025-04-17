@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/data"
+import { data } from "../data/data";
 import headerImg from "../assets/image/Image.png";
 import ShapesRight from "../assets/ShapesRight.svg";
 import ourQuote from "../assets/ourQuote.svg";
