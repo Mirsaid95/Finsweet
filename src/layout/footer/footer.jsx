@@ -38,7 +38,7 @@ export const Footer = () => {
             />
           </form>
         </div>
-        <div className="mt-[100px] flex flex-col gap-4">
+        <div className="mt-[100px] flex flex-col gap-8">
           <div className="relative grid grid-cols-1 md:grid-cols-2 md:gap-20">
             <div className="flex flex-col gap-10 md:flex-cols-2">
               <span className="absolute -top-10 left-0">
@@ -157,6 +157,7 @@ export const Footer = () => {
             <BsFacebook className="text-[20px] text-[#232536]" />
             <BsTwitter className="text-[20px] text-[#232536]" />
             <BsLinkedin className="text-[20px] text-[#232536]" />
+            
           </div>
         </div>
       </div>
