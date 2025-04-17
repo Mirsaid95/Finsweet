@@ -9,17 +9,17 @@ export const Footer = () => {
   return (
     <footer className="footer pt-10 pb-10">
       <div className="max-w-[1024px] mx-auto p-2">
-        <div className="relative flex flex-col gap-4 bg-[#666DFF] p-10 h-[40vh] md:flex-row flex-1 md:items-center justify-center">
+        <div className="relative flex flex-col gap-4 bg-[#666DFF] p-8 h-[40vh] md:flex-row flex-1 md:items-center justify-center">
           <div className="flex flex-col absolute right-0 top-0 h-full">
-            <div className="bg-orange-500 w-2 h-[70px]">&nbsp;</div>
-            <div className="bg-orange-200 w-2 h-[90px] xl:h-[140px]">&nbsp;</div>
-            <div className="bg-blue-700 w-2 h-[90px] xl:h-[87px]">&nbsp;</div>
+            <div className="bg-orange-500 w-2 h-16">&nbsp;</div>
+            <div className="bg-orange-200 w-2 h-24 xl:h-[140px]">&nbsp;</div>
+            <div className="bg-blue-700 w-2 h-full xl:h-[87px]">&nbsp;</div>
           </div>
           <div className="absolute top-0 left-0">
             <img
               src={ShapesFooter}
               alt="Shapes"
-              className="w-[76px] h-[68px]"
+              className="w-[62px] h-[56px]"
             />
           </div>
           <div className="flex flex-col gap-2">
