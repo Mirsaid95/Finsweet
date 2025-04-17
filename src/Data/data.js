@@ -19,7 +19,7 @@ import Testing from "../assets/Testing.svg"
 import Deployment from "../assets/Deployment.svg"
 import Maintenance from "../assets/Maintenance.svg"
 
-export const data = {
+const data = {
     navigation: [
         {
             id: 1,
@@ -28,34 +28,34 @@ export const data = {
         },
         {
             id: 2,
-            label: "Home",
             link: "/",
+            label: "Home",
 
         },
         {
             id: 3,
-            label: "Service",
-            link: "/service"
+            link: "/service",
+            label: "Service"
         },
         {
             id: 4,
-            label: "Company",
             link: "/company",
+            label: "Company",
         },
         {
             id: 5,
+            link: "/career",
             label: "Career",
-            link: "/career"
         },
         {
             id: 6,
+            link: "/blog",
             label: "Blog",
-            link: "/blog"
         },
         {
             id: 7,
+            link: "/contact",
             label: "Contact us",
-            link: "/contact"
         },
     ],
     aboutUs: [
@@ -188,3 +188,5 @@ export const data = {
         }
     ]
 }
+
+export default data

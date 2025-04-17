@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../Button/Button";
 import ShapesRight from "../../assets/ShapesRight.svg";
-import { data } from "../../data/data";
+import  data  from "../../data/data";
 import Feature from "../../assets/image/Feature.png";
 import Feature1 from "../../assets/image/Feature-1.png";
 import Feature2 from "../../assets/image/Feature-2.png";
@@ -9,7 +9,7 @@ import Feature3 from "../../assets/image/Feature-3.png";
 // import Feature4 from "../../assets/image/Feature-4.png";
 // import Feature5 from "../../assets/image/Feature-5.png";
 
-export const Service = () => {
+const Service = () => {
   return (
     <div className="service ">
       <section className="service-section bg-[#FFE6D2]">
@@ -188,3 +188,5 @@ export const Service = () => {
     </div>
   );
 };
+
+export default Service;
