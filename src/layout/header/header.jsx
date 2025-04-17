@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LuAlignJustify } from "react-icons/lu";
 import { useState } from "react";
-import { data } from "../../data/data"
-
-
+import { data } from "../../Data/data.js";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

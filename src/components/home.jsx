@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../data/data";
+import { data } from "../Data/data.js";
 import headerImg from "../assets/image/Image.png";
 import ShapesRight from "../assets/ShapesRight.svg";
 import ourQuote from "../assets/ourQuote.svg";
@@ -188,7 +188,10 @@ export const Home = () => {
           </div>
           <div className="flex flex-wrap gap-4 md:flex-nowrap">
             {data.ourService.map((item) => (
-              <div key={item.id} className="bg-white flex flex-col gap-4 p-4 shadow-2xl">
+              <div
+                key={item.id}
+                className="bg-white flex flex-col gap-4 p-4 shadow-2xl"
+              >
                 <div className="bg-[#FFE6D2] w-[50px] h-[50px] rounded-full flex items-center justify-center">
                   <img src={item.img} alt="Icon-icon" />
                 </div>
@@ -253,7 +256,7 @@ export const Home = () => {
                     </div>
                   )}
                   <div className="flex flex-col gap-4">
-                    <div  className="w-[50px] h-[50px] bg-orange-200 rounded-full flex items-center justify-center">
+                    <div className="w-[50px] h-[50px] bg-orange-200 rounded-full flex items-center justify-center">
                       <img src={item.img} alt={item.title} />
                     </div>
                     <div>
@@ -359,7 +362,10 @@ export const Home = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             {data.blogNews.map((item) => (
-              <div key={item.id} className="bg-white flex flex-col gap-2 md:flex-row">
+              <div
+                key={item.id}
+                className="bg-white flex flex-col gap-2 md:flex-row"
+              >
                 <div className="w-full md:w-[60%] md:h-full">
                   <img
                     src={item.img}
@@ -375,10 +381,17 @@ export const Home = () => {
                       day: "numeric",
                     })}
                   </p>
-                  <h1 className="text-[18px] text-[#232536] font-semibold">{item.title}</h1>
+                  <h1 className="text-[18px] text-[#232536] font-semibold">
+                    {item.title}
+                  </h1>
                   <ul>
                     <li className="text-blue-500">
-                      <a href="#" className="text-[14px] flex items-center gap-2">Read More <MdOutlineArrowRightAlt/></a>
+                      <a
+                        href="#"
+                        className="text-[14px] flex items-center gap-2"
+                      >
+                        Read More <MdOutlineArrowRightAlt />
+                      </a>
                     </li>
                   </ul>
                 </div>
