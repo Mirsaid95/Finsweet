@@ -4,8 +4,8 @@ import ShapesRight from "../../assets/ShapesRight.svg";
 import { data } from "../../data/data";
 import Feature from "../../assets/image/Feature.png";
 import Feature1 from "../../assets/image/Feature-1.png";
-// import Feature2 from "../../assets/image/Feature-2.png";
-// import Feature3 from "../../assets/image/Feature-3.png";
+import Feature2 from "../../assets/image/Feature-2.png";
+import Feature3 from "../../assets/image/Feature-3.png";
 // import Feature4 from "../../assets/image/Feature-4.png";
 // import Feature5 from "../../assets/image/Feature-5.png";
 
@@ -30,7 +30,7 @@ export const Service = () => {
               <Button
                 text="Request A Quote"
                 className={
-                  "hidden text-[12px] md:flex items-center gap-2 w-[150px] justify-center h-[40px]"
+                  "hidden text-[12px] md:flex items-center gap-2 w-[200px] justify-center h-[54px]"
                 }
               />
             </div>
@@ -151,15 +151,38 @@ export const Service = () => {
                 </div>
                 <div className="flex flex-col gap-4 text-center md:text-start md:flex-1">
                     <p className="text-[12px] tracking-wider uppercase font-medium text-[#232536]">Development</p>
-                    <h1 className="text-[#232536] text-[20px] font-medium tracking-wider md:text-[30px] md:font-semibold lg:text-[46px] lg:tracking-wider lg:leading-10">Bring your ideas to reality with certified team of developers, working with latest technologies </h1>
-                    <p className="text-[#232536] text-[12px] tracking-wide md:text-[18px] lg:leading-6 ">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+                    <h1 className="text-[#232536] text-[20px] leading-8 font-medium tracking-wider md:text-[32px] md:font-semibold lg:text-[46px] lg:tracking-wider lg:leading-10">Bring your ideas to reality with certified team of developers, working with latest technologies </h1>
+                    <p className="text-[#232536] text-[12px] tracking-wide md:text-[16px] lg:leading-6 lg:text-[18px]">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
                 </div>
             </div>
         </div>
       </section>
       <section className="aws-azure">
               <div className="max-w-[1024px] mx-auto p-2 pt-10 pb-10">
-
+                <div className="flex flex-col gap-4 md:flex-row md:gap-8 text-center md:text-start md:items-center">
+                    <div className="flex flex-col gap-4 flex-1">
+                        <p className="text-[#232536] text-[12px] font-semibold uppercase md:normal-case">AWS/Azure</p>
+                        <h1 className="text-[#232536] text-[20px] font-semibold tracking-wide md:text-[32px] leading-8 lg:text-[46px] lg:leading-none">We help you deploy, manage and secure your application on leading web services</h1>
+                        <p className="text-[#232536] text-[12px] tracking-wide md:text-[16px] lg:text-[18px]">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+                    </div>
+                    <div className="azure-image flex-1">
+                        <img src={Feature2} alt="" className="w-full" />
+                    </div>
+                </div>
+              </div>
+      </section>
+      <section className="consulting bg-[#ECF8F9]">
+              <div className="max-w-[1024px] mx-auto p-2 pt-10 pb-10">
+                <div className="flex flex-col gap-4 md:flex-row md:gap-8 text-center md:items-center">
+                    <div className="consulting-image flex-1">
+                        <img src={Feature3} alt="image" className="w-full"/>
+                    </div>
+                    <div className="flex flex-col gap-4 text-center md:text-start md:flex-1">   
+                        <p className="text-[#232536] text-[12px] font-semibold uppercase tracking-wider">Consulting</p>
+                        <h1 className="text-[#232536] text-[20px] font-semibold tracking-wide md:text-[32px] lg:text-[46px]">Get advice from world class professionals</h1>
+                        <p className="text-[#232536] text-[12px] tracking-wide md:text-[16px] lg:text-[18px]">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+                    </div>
+                </div>
               </div>
       </section>
     </div>
