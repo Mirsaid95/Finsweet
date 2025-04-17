@@ -1,21 +1,19 @@
 import React from "react";
 import ShapesFooter from "../../assets/ShapesFooter.svg";
 import Shapessmall from "../../assets/Shapessmall.svg";
-import logo from "../../assets/logoFooter.svg"
+import logo from "../../assets/logoFooter.svg";
 import { FaInstagram } from "react-icons/fa6";
-import { BsFacebook, BsTwitter,BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 export const Footer = () => {
   return (
     <footer className="footer pt-10 pb-10">
       <div className="max-w-[1024px] mx-auto p-2">
         <div className="relative flex flex-col gap-4 bg-[#666DFF] p-10 h-[40vh] md:flex-row flex-1 md:items-center justify-center">
-          <div className="flex flex-col absolute -right-0 top-0 h-full">
+          <div className="flex flex-col absolute right-0 top-0 h-full">
             <div className="bg-orange-500 w-2 h-[70px]">&nbsp;</div>
-            <div className="bg-orange-200 w-2 h-[90px] xl:h-[140px]">
-              &nbsp;
-            </div>
-            <div className="bg-blue-700 w-2 h-[80px] xl:h-[87px]">&nbsp;</div>
+            <div className="bg-orange-200 w-2 h-[90px] xl:h-[140px]">&nbsp;</div>
+            <div className="bg-blue-700 w-2 h-[90px] xl:h-[87px]">&nbsp;</div>
           </div>
           <div className="absolute top-0 left-0">
             <img
@@ -39,7 +37,7 @@ export const Footer = () => {
           </form>
         </div>
         <div className="mt-[100px] flex flex-col gap-8">
-          <div className="relative grid grid-cols-1 md:grid-cols-2 md:gap-20">
+          <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
             <div className="flex flex-col gap-10 md:flex-cols-2">
               <span className="absolute -top-10 left-0">
                 <img src={Shapessmall} alt="Shapes" />
@@ -149,15 +147,18 @@ export const Footer = () => {
         </div>
         <div className="bg-orange-200 flex flex-col gap-4 items-center md:flex-row md:justify-between p-2 mt-10">
           <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
-            <span><img src={logo} alt="" /></span>
-            <p className="text-[12px] md:text-[16px] lg:text-[18px]">©2021 Finsweet</p>
+            <span>
+              <img src={logo} alt="" />
+            </span>
+            <p className="text-[12px] md:text-[16px] lg:text-[18px]">
+              ©2021 Finsweet
+            </p>
           </div>
           <div className="flex items-center gap-3">
             <FaInstagram className="text-[20px] text-[#232536]" />
             <BsFacebook className="text-[20px] text-[#232536]" />
             <BsTwitter className="text-[20px] text-[#232536]" />
             <BsLinkedin className="text-[20px] text-[#232536]" />
-            
           </div>
         </div>
       </div>
