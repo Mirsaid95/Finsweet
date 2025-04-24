@@ -6,8 +6,8 @@ import Feature from "../../assets/image/Feature.png";
 import Feature1 from "../../assets/image/Feature-1.png";
 import Feature2 from "../../assets/image/Feature-2.png";
 import Feature3 from "../../assets/image/Feature-3.png";
-// import Feature4 from "../../assets/image/Feature-4.png";
-// import Feature5 from "../../assets/image/Feature-5.png";
+import Feature4 from "../../assets/image/Feature-4.png";
+
 
 const Service = () => {
   return (
@@ -216,6 +216,31 @@ const Service = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="information-technology">
+        <div className="max-w-[1024px] mx-auto p-2 pt-10 pb-10">
+          <div className="flex flex-col gap-4 md:flex-row md:gap-8 text-center md:items-center">
+            <div className="flex flex-col gap-4 text-center md:text-start md:flex-1">
+              <p className="text-[#232536] text-[12px] font-semibold uppercase tracking-wider">
+                Information technology
+              </p>
+              <h1 className="text-[#232536] text-[20px] font-semibold tracking-wide leading-8 md:text-[32px] lg:text-[48px] lg:leading-none">
+              We want to get local identification in every corner of the world in this era of global citizenship.
+              </h1>
+              <p className="text-[#232536] text-[12px] tracking-wide md:text-[16px] lg:text-[18px]">
+                Through True Rich Attended does no end it his mother since real
+                had half every him case in packages enquire we up ecstatic
+                unsatiable saw his giving Remain expense you position concluded.
+                Through True Rich Attended does no end it his mother since real
+                had half every.
+              </p>
+            </div>
+            <div className="information-image flex-1">
+              <img src={Feature4} alt="" className="w-full" />
+            </div>
+          </div>
+        </div>
+
       </section>
     </div>
   );

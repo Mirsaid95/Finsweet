@@ -7,7 +7,7 @@ import { Button } from "./Button/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 export const Home = () => {
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <header className="bg-[#232536] pt-4">
